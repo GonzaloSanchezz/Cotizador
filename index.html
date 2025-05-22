@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remisería</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Cotizador de viajes</h1>
+            <form id="remiseriaForm">
+                <label for="salida">Ubicación de salida:</label>
+                <input type="text" id="salida" placeholder="Ejemplo: Tropero Sosa 123" required>
+                
+                <label for="llegada">Ubicación de llegada:</label>
+                <input type="text" id="llegada" placeholder="Ejemplo: Avenida Mitre 789" required>
+                
+                <label for="hora">Hora de salida:</label>
+                <input type="time" id="hora" required>
+                
+                <label for="personas">Cantidad de personas:</label>
+                <input type="number" id="personas" min="1" max="8" value="1" required>
+                
+                <button type="button" id="calcular">Calcular Precio</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH7UdQD2VnEhABM_gAjphjiOlW_TTn55c&libraries=places"></script>
+
+</body>
+</html>
