@@ -17,7 +17,7 @@
 
     <section id="sectionCotiza" class="section2Cotizaciones">
       <div class="containerCotizador">
-        <h1 class="h1Cotizador">Cotizador - Pochocó</h1>
+        <h1 class="h1Cotizador">COTIZADOR - POCHOCÓ</h1>
         <form id="remiseriaForm">
         <label for="llegada">Dirección de llegada:</label>
         <input type="text" id="llegada" placeholder="Escribí o seleccioná en el mapa">
@@ -27,6 +27,9 @@
         
         <label class="labelCotizador" for="hora">Hora del evento:</label>
         <input class="inputCotizador" type="time" id="hora" required>
+
+        <label for="fecha">Fecha del viaje:</label>
+        <input type="date" id="fecha" name="fecha" required>
         
         <label class="labelCotizador" for="personas">Cantidad de personas:</label>
         <input class="inputCotizador" type="number" id="personas" min="1" max="8" value="1" required>
@@ -48,11 +51,10 @@
     <script>
       AOS.init();
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH7UdQD2VnEhABM_gAjphjiOlW_TTn55c&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAgbBhRLl_H1acPv633ypo9SAKYh7lMuk&callback=initMap" async defer></script>
 
 
 
     <script src="./script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH7UdQD2VnEhABM_gAjphjiOlW_TTn55c&libraries=places"></script>
   </body>
 </html>

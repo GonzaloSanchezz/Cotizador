@@ -4,6 +4,7 @@ document.getElementById("calcular").addEventListener("click", function () {
     const llegada = document.getElementById("llegada").value.trim();
     const hora = document.getElementById("hora").value;
     const personas = parseInt(document.getElementById("personas").value);
+
     buttonContinuar.style.display = 'flex'
 
     if (!salida || !llegada || !hora || isNaN(personas)) {
@@ -52,6 +53,7 @@ function calcularDistanciaConMaps() {
 function mostrarResultado(distancia, personas) {
     const base50 = document.getElementById("on").checked;
     const base80 = document.getElementById("off").checked;
+    
 
     if (!base50 && !base80) {
         alert("Por favor, seleccione una base (50.000 o 80.000).");
@@ -97,6 +99,7 @@ document.getElementById('buttonContinuar').addEventListener("click", function ()
     const endLocation = document.getElementById('llegada').value;
     const cantidadPersonas = document.getElementById('personas').value;
     const hora = document.getElementById('hora').value;
+    const fecha = document.getElementById("fecha").value;
 
     const base50 = document.getElementById("on").checked;
     const base80 = document.getElementById("off").checked;
@@ -109,6 +112,7 @@ document.getElementById('buttonContinuar').addEventListener("click", function ()
         `Cotización de mi evento:\n\n` +
         `- Lugar: ${endLocation}\n` +
         `- Cantidad de personas: ${cantidadPersonas}\n` +
+        `- Fecha del evento: ${fecha}\n` +	
         `- Hora del evento: ${hora}\n` +
         `- Plan seleccionado: ${planSeleccionado}\n` +
         `- Total: $${total.toLocaleString()}`;
